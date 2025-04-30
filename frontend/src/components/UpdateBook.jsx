@@ -306,7 +306,7 @@ const UpdateBook = () => {
     if (!selectedBook) return;
 
     try {
-      await axios.put(`http://localhost:9000/books/${selectedBook._id}`, updatedData);
+      await axios.put(`https://book-app-wn8v.onrender.com/books/${selectedBook._id}`, updatedData);
       alert('Book updated successfully');
       setSelectedBook(null);
       setUpdatedData({ title: '', author: '', date: '', image: '' });

@@ -179,7 +179,7 @@ const DeleteBook = () => {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get('http://localhost:9000/books');
+      const res = await axios.get('https://book-app-wn8v.onrender.com/books');
       setBooks(res.data);
     } catch (error) {
       console.error(error);
@@ -192,7 +192,7 @@ const DeleteBook = () => {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:9000/books/${id}`);
+      await axios.delete(`https://book-app-wn8v.onrender.com/books/${id}`);
       alert('Book deleted successfully');
       fetchBooks();
     } catch (error) {
