@@ -106,7 +106,7 @@ const AddBook = () => {
         const books = {title, author, date, image};
         
         try {
-            await axios.post('https://book-app-1-a9ot.onrender.com/books', books);
+            await axios.post('https://book-app-wn8v.onrender.com/books', books);
             alert('Book Added Successfully');
             e.target.reset(); // Clear the form
         } catch (error) {
