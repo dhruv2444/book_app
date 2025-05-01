@@ -50,7 +50,7 @@ app.get('/search', async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).send('Server Error');
-    }
+    }
 });
 
 app.delete('/books/:id', async (req, res) => {
@@ -61,8 +61,8 @@ app.delete('/books/:id', async (req, res) => {
     } catch (error) {
       console.error(error);
       res.status(500).send('Server error');
-    }
-  });
+    }
+  });
 
 app.put('/books/:id', async (req, res) => {
     const { id } = req.params;
